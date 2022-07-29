@@ -74,10 +74,16 @@ const questions = [
       "List your collaborators, if any, with links to their GitHub profiles:",
   },
   {
+    type: "confirm",
+    name: "licenseConfirm",
+    message: "Is your project licensed?",
+    default: false,
+  },
+  {
     type: "list",
     name: "license",
-    message: "How is your project licensed? Select one.",
-    choices: ["MIT", "Apache", "GPL", "lgpl_2_1", "ppl1.3c"]
+    message: "Please choose a license:",
+    choices: ["MIT", "Apache", "GPL", "BSD"]
   },
   {
     type: "input",
