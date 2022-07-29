@@ -60,14 +60,15 @@ const questions = [
   },
 ];
 
-// const promptUser = () => { 
-// return 
-inquirer
+const promptUser = () => { 
+return inquirer
   .prompt(questions)
   .then((answers) => {
     console.log(answers);
-    return generateMarkdown();
-   
+    return generateMarkdown(answers);
+  })
+  .then(readmeMD => {
+    return writeToFile(readmeMD)
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -76,11 +77,44 @@ inquirer
       // Something else went wrong
     }
   });
-// };
+};
 
 // promptUser();
+
 // // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile("./dist/readme.md", generateMarkdown(data), err => {
+     // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
+     if (err) {
+      reject(err);
+      // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
+      return;
+     }
+    // if everything went well, resolve the Promise and send the successful data to the `.then()` method
+    resolve({
+      ok: true,
+      message: 'File created!'
+    });
+  }); 
+  });
+};
+
+const mockData =
+{
+  name: 'Melissa Mayfield',
+  github: 'Mayfieldmel',
+  title: 'Readme-Generator',
+  description: 'generates readmes',
+  installation: 'clone repo and instal npm & inquirer',
+  usage: 'see demo',
+  credits: 'just me',
+  license: 'MIT',
+  contributions: 'email me',
+  tests: 'none'
+}
+
+writeToFile("readme", mockData) 
 
 // // TODO: Create a function to initialize app
 // function init() {}
