@@ -60,16 +60,19 @@ const questions = [
   },
 ];
 
+// prompt user with questions from array
 const promptUser = () => { 
-return inquirer
-  .prompt(questions)
+  return inquirer.prompt(questions)
+};
+
+// generate markdown and write file with user input
+promptUser()
   .then((answers) => {
-    // console.log(generateMarkdown(answers));
     return generateMarkdown(answers);
   })
   .then(data => {
-    return writeToFile(data);
     console.log("success!");
+    return writeToFile(data);
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -78,11 +81,8 @@ return inquirer
       // Something else went wrong
     }
   });
-};
 
-promptUser();
-
-// // TODO: Create a function to write README file
+// write README file using promise
 function writeToFile(data) {
   return new Promise((resolve, reject) => {
     fs.writeFile("./dist/readme.md", data, err => {
