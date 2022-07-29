@@ -64,11 +64,12 @@ const promptUser = () => {
 return inquirer
   .prompt(questions)
   .then((answers) => {
-    console.log(answers);
+    // console.log(generateMarkdown(answers));
     return generateMarkdown(answers);
   })
-  .then(readmeMD => {
-    return writeToFile(readmeMD)
+  .then(data => {
+    return writeToFile(data);
+    console.log("success!");
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -79,15 +80,16 @@ return inquirer
   });
 };
 
-// promptUser();
+promptUser();
 
 // // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
   return new Promise((resolve, reject) => {
-    fs.writeFile("./dist/readme.md", generateMarkdown(data), err => {
+    fs.writeFile("./dist/readme.md", data, err => {
      // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
      if (err) {
       reject(err);
+      console.log(err);
       // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
       return;
      }
@@ -100,21 +102,21 @@ function writeToFile(fileName, data) {
   });
 };
 
-const mockData =
-{
-  name: 'Melissa Mayfield',
-  github: 'Mayfieldmel',
-  title: 'Readme-Generator',
-  description: 'generates readmes',
-  installation: 'clone repo and instal npm & inquirer',
-  usage: 'see demo',
-  credits: 'just me',
-  license: 'MIT',
-  contributions: 'email me',
-  tests: 'none'
-}
+// const mockData =
+// {
+//   name: 'Melissa Mayfield',
+//   github: 'Mayfieldmel',
+//   title: 'Readme-Generator',
+//   description: 'generates readmes',
+//   installation: 'clone repo and instal npm & inquirer',
+//   usage: 'see demo',
+//   credits: 'just me',
+//   license: 'MIT',
+//   contributions: 'email me',
+//   tests: 'none'
+// }
 
-writeToFile("readme", mockData) 
+// writeToFile("readme", mockData) 
 
 // // TODO: Create a function to initialize app
 // function init() {}

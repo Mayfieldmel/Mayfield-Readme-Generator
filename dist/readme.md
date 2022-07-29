@@ -2,7 +2,7 @@
 
   ## Description
   
-  generates readmes
+  generates readmes from user input
   
   ## Table of Contents
   * [Installation](#installation)
@@ -12,7 +12,7 @@
   
   ## Installation
   
-  clone repo and instal npm & inquirer
+  clone repo then install npm & inquirer
   
   ## Usage
   
@@ -20,7 +20,7 @@
   
   ## Credits
   
-  just me
+  none
   
   ## License
   
