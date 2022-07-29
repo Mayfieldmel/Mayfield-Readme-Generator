@@ -1,6 +1,7 @@
 // packages needed for this application
 var inquirer = require("inquirer");
 var fs = require("fs");
+var generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user input
 const questions = [
@@ -65,6 +66,7 @@ inquirer
   .prompt(questions)
   .then((answers) => {
     console.log(answers);
+    return generateMarkdown();
    
   })
   .catch((error) => {
