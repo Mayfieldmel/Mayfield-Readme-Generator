@@ -9,21 +9,53 @@ const questions = [
     type: "input",
     name: "name",
     message: "What is your name? (Required)",
+    validate: nameInput => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log('Please enter your name!');
+        return false;
+      }
+    }
   },
   {
     type: "input",
     name: "github",
     message: "What is your Github username? (Required)",
+    validate: githubInput => {
+      if (githubInput) {
+        return true;
+      } else {
+        console.log('Please enter your github username!');
+        return false;
+      }
+    }
   },
   {
     type: "input",
     name: "title",
     message: "What is your project title? (Required)",
+    validate: titleInput => {
+      if (titleInput) {
+        return true;
+      } else {
+        console.log('Please enter your project name!');
+        return false;
+      }
+    }
   },
   {
     type: "input",
     name: "description",
-    message: "Provide a short description of your project:",
+    message: "Provide a short description of your project (Required):",
+    validate: descriptionInput => {
+      if (descriptionInput) {
+        return true;
+      } else {
+        console.log('Please enter a brief description!');
+        return false;
+      }
+    }
   },
   {
     type: "input",
