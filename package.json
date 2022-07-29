@@ -1,23 +1,14 @@
 {
-  "dependencies": {
-    "inquirer": "^8.2.4"
-  },
-  "name": "mayfield-readme-generator",
-  "description": "[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)",
+  "name": "static-site",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mayfieldmel/Mayfield-Readme-Generator.git"
-  },
-  "author": "Melissa Mayfield",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Mayfieldmel/Mayfield-Readme-Generator/issues"
-  },
-  "homepage": "https://github.com/Mayfieldmel/Mayfield-Readme-Generator#readme"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  }
 }
