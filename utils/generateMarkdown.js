@@ -45,13 +45,13 @@ function generateMarkdown(data) {
   
   ## Credits
   
-  ${data[0].credits}
+  Made with ❤️ by ${data[0].name} ${data[0].credits}
 
   ## Questions
   
   If you have questions, contact me via email at [${data[0].email}](mailto:${data[0].email}) .
 
-  For more information, checkout my github profile page at github.com/${data[0].github}
+  For more information, checkout my github profile page at github.com/${data[0].github} .
   
   ## License
   

@@ -7,19 +7,6 @@ var generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
   {
     type: "input",
-    name: "name",
-    message: "What is your name? (Required)",
-    validate: nameInput => {
-      if (nameInput) {
-        return true;
-      } else {
-        console.log('Please enter your name!');
-        return false;
-      }
-    }
-  },
-  {
-    type: "input",
     name: "email",
     message: "What is your email address? (Required)",
     validate: emailInput => {
@@ -84,7 +71,7 @@ const questions = [
     type: "input",
     name: "credits",
     message:
-      "List your collaborators, if any, with links to their GitHub profiles:",
+      "List your collaborators. If none, leave question blank",
   },
   {
     type: "input",
