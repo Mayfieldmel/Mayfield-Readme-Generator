@@ -23,7 +23,6 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Contributions](#contributions)
   * [Tests](#tests)
-  * [Credits](#credits)
   * [Questions](#questions)
   * [License](#license)
   
@@ -42,10 +41,6 @@ function generateMarkdown(data) {
   ## Tests
 
   ${data[0].tests}
-  
-  ## Credits
-  
-  Made with ❤️ by ${data[0].name} ${data[0].credits}
 
   ## Questions
   
