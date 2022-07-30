@@ -7,7 +7,9 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Credits](#credits)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [Questions](#questions)
   * [License](#license)
   
   ## Installation
@@ -17,11 +19,21 @@
   ## Usage
   
   see demo
-  
-  ## Credits
-  
+
+  ## Contributions
+
+  email me
+
+  ## Tests
+
   none
+
+  ## Questions
+  
+  If you have questions, contact me via email at [mayfieldmel@gmail.com](mailto:mayfieldmel@gmail.com) .
+
+  For more information, checkout my github profile page at github.com/Mayfieldmel .
   
   ## License
   
-  GPL
+  MIT

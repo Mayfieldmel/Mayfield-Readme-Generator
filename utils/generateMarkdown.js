@@ -11,12 +11,13 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data[0].title}
+function generateMarkdown(generateData) {
+  const [data] = generateData;
+  return `# ${data.title}
 
   ## Description
   
-  ${data[0].description}
+  ${data.description}
   
   ## Table of Contents
   * [Installation](#installation)
@@ -28,29 +29,29 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data[0].installation}
+  ${data.installation}
   
   ## Usage
   
-  ${data[0].usage}
+  ${data.usage}
 
   ## Contributions
 
-  ${data[0].contributions}
+  ${data.contributions}
 
   ## Tests
 
-  ${data[0].tests}
+  ${data.tests}
 
   ## Questions
   
-  If you have questions, contact me via email at [${data[0].email}](mailto:${data[0].email}) .
+  If you have questions, contact me via email at [${data.email}](mailto:${data.email}) .
 
-  For more information, checkout my github profile page at github.com/${data[0].github} .
+  For more information, checkout my github profile page at github.com/${data.github} .
   
   ## License
   
-  ${data[1].license}
+  ${generateData[1].license}
 `;
 }
 

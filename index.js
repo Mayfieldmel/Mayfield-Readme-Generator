@@ -124,12 +124,13 @@ promptUser()
       return licenseQuestion(answers);
     } else {
       console.log("no license");
-      return answers;
+      const dataArr = [answers];
+      return dataArr;
     }
   })
-  .then((data) => {
-    console.log(data);
-    return generateMarkdown(data);
+  .then((answerData) => {
+    console.log("answerData", answerData);
+    return generateMarkdown(answerData);
   })
   .then(readmeData => {
     return writeToFile(readmeData);
