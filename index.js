@@ -69,12 +69,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "credits",
-    message:
-      "List your collaborators. If none, leave question blank",
-  },
-  {
-    type: "input",
     name: "contributions",
     message: "Provide guidelines for contributions to your project:",
   },
