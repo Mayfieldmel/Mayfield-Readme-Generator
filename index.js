@@ -26,7 +26,7 @@ const questions = [
       if (emailInput) {
         return true;
       } else {
-        console.log('Please enter your email adress!');
+        console.log('Please enter your email address!');
         return false;
       }
     }
