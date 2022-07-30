@@ -74,26 +74,6 @@ const questions = [
       "List your collaborators, if any, with links to their GitHub profiles:",
   },
   {
-    type: "confirm",
-    name: "licenseConfirm",
-    message: "Is your project licensed?",
-    default: false,
-  },
-  {
-    type: "list",
-    name: "license",
-    message: "Please choose a license:",
-    choices: ["MIT", "Apache", "GPL", "BSD", "Apache 2"],
-    validate: licenseInput => {
-      if (licenseInput) {
-        return true;
-      } else {
-        console.log('Please select a license!');
-        return false;
-      }
-    }
-  },
-  {
     type: "input",
     name: "contributions",
     message: "Provide guidelines for contributions to your project:",
@@ -104,7 +84,38 @@ const questions = [
     message:
       "Provide test instructions, if any, for running tests on your project:",
   },
+  {
+    type: "confirm",
+    name: "confirmLicense",
+    message: "Is your project licensed?",
+    default: false,
+  },
 ];
+
+const licenseQuestion = templateData => {
+  return inquirer.prompt([
+    {
+      type: "list",
+      name: "license",
+      message: "Please choose a license:",
+      choices: ["MIT", "Apache", "GPL", "BSD", "Apache 2"],
+      validate: licenseInput => {
+        if (licenseInput) {
+          return true;
+        } else {
+          console.log('Please select a license!');
+          return false;
+        }
+      }
+    }
+  ])
+  .then(answer => {
+    const dataArr = [templateData];
+    dataArr.push(answer);
+    return dataArr
+    
+  })
+};
 
 // prompt user with questions from array
 const promptUser = () => { 
@@ -113,12 +124,21 @@ const promptUser = () => {
 
 // generate markdown and write file with user input
 promptUser()
-  .then((answers) => {
-    return generateMarkdown(answers);
+  .then(answers => {
+    console.log(answers);
+    if (answers.confirmLicense) {
+      return licenseQuestion(answers);
+    } else {
+      console.log("no license");
+      return answers;
+    }
   })
-  .then(data => {
-    console.log("success!");
-    return writeToFile(data);
+  .then((data) => {
+    console.log(data);
+    return generateMarkdown(data);
+  })
+  .then(readmeData => {
+    return writeToFile(readmeData);
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -129,9 +149,9 @@ promptUser()
   });
 
 // write README file using promise
-function writeToFile(data) {
+function writeToFile(readme) {
   return new Promise((resolve, reject) => {
-    fs.writeFile("./dist/readme.md", data, err => {
+    fs.writeFile("./dist/readme.md", readme, err => {
      // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
      if (err) {
       reject(err);
@@ -144,6 +164,7 @@ function writeToFile(data) {
       ok: true,
       message: 'File created!'
     });
+    console.log("success!");
   }); 
   });
 };

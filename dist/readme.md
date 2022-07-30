@@ -1,8 +1,8 @@
-# Weather Dash
+# Readme Generator
 
   ## Description
   
-  provide weather forcasts by city
+  generates readmes from user input
   
   ## Table of Contents
   * [Installation](#installation)
@@ -12,16 +12,16 @@
   
   ## Installation
   
-  use deployed url or clone repo and run locally
+  clone repo then install npm and inquirer
   
   ## Usage
   
-  see demo 
+  see demo
   
   ## Credits
   
-  just me
+  none
   
   ## License
   
-  MIT
+  GPL
