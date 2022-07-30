@@ -20,6 +20,19 @@ const questions = [
   },
   {
     type: "input",
+    name: "email",
+    message: "What is your email address? (Required)",
+    validate: emailInput => {
+      if (emailInput) {
+        return true;
+      } else {
+        console.log('Please enter your email adress!');
+        return false;
+      }
+    }
+  },
+  {
+    type: "input",
     name: "github",
     message: "What is your Github username? (Required)",
     validate: githubInput => {
