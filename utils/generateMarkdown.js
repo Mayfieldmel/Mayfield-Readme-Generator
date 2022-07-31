@@ -11,7 +11,15 @@ function renderLicenseBadge(license) {
  };
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (!license) {
+    return '';
+   }
+  
+    return `
+    [license link](#)
+    `;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -65,9 +73,11 @@ function generateMarkdown(generateData) {
   
   If you have questions, contact me via email at [${data.email}](mailto:${data.email}) .
 
-  For more information, checkout my github profile page at github.com/${data.github} .
+  For more information, checkout my github profile page at [github.com/${data.github}](github.com/${data.github}) .
   
   ${renderLicenseSection(generateData[1].license)}
+  ${renderLicenseLink(generateData[1].license)}
+
 `;
 }
 

@@ -15,7 +15,7 @@
   
   ## Installation
   
-  clone repo
+  access deployed link
   
   ## Usage
   
@@ -23,7 +23,7 @@
 
   ## Contributions
 
-  email me
+  emial me
 
   ## Tests
 
@@ -31,12 +31,18 @@
 
   ## Questions
   
-  If you have questions, contact me via email at [Mayfieldmel@gmail.com](mailto:Mayfieldmel@gmail.com) .
+  If you have questions, contact me via email at [mayfieldmel@gmail.com](mailto:mayfieldmel@gmail.com) .
 
-  For more information, checkout my github profile page at github.com/Mayfieldmel .
+  For more information, checkout my github profile page at [github.com/Mayfieldmel](github.com/Mayfieldmel) .
   
   
   ## license
 
-  MIT 
+  Licensed under the MIT license.
   
+  
+    
+    [license link](#)
+  
+    
+
