@@ -1,8 +1,9 @@
 # Readme Generator
+  // undefined
 
   ## Description
   
-  generates readmes from user input
+  generates readmes
   
   ## Table of Contents
   * [Installation](#installation)
@@ -14,7 +15,7 @@
   
   ## Installation
   
-  clone repo then install npm and inquirer
+  clone repo
   
   ## Usage
   
@@ -30,10 +31,12 @@
 
   ## Questions
   
-  If you have questions, contact me via email at [mayfieldmel@gmail.com](mailto:mayfieldmel@gmail.com) .
+  If you have questions, contact me via email at [Mayfieldmel@gmail.com](mailto:Mayfieldmel@gmail.com) .
 
   For more information, checkout my github profile page at github.com/Mayfieldmel .
   
-  ## License
   
-  MIT
+  ## license
+
+  MIT 
+  

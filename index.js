@@ -166,19 +166,19 @@ function writeToFile(readme) {
 
 // const mockData =
 // {
-//   name: 'Melissa Mayfield',
 //   github: 'Mayfieldmel',
 //   title: 'Readme-Generator',
 //   description: 'generates readmes',
 //   installation: 'clone repo and instal npm & inquirer',
 //   usage: 'see demo',
-//   credits: 'just me',
-//   license: 'MIT',
 //   contributions: 'email me',
-//   tests: 'none'
+//   tests: 'none',
+//   confirmLicense: 'y',
+//   license: 'MIT'
 // }
 
-// writeToFile("readme", mockData) 
+
+
 
 // // TODO: Create a function to initialize app
 // function init() {}
