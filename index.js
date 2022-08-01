@@ -92,7 +92,7 @@ const licenseQuestion = templateData => {
       type: "list",
       name: "license",
       message: "Please choose a license:",
-      choices: ["MIT", "Apache", "GPL", "BSD", "Apache 2"],
+      choices: ["MIT", "Apache", "GPL", "BSD"],
       validate: licenseInput => {
         if (licenseInput) {
           return true;

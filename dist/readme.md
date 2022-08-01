@@ -1,9 +1,9 @@
-# Readme Generator
-  ![licenseBadge](https://img.shields.io/badge/License-Apache-green.svg)
+# Weather Dash
+  
 
   ## Description
   
-  generates readmes
+  provide weather forecast by city
   
   ## Table of Contents
   * [Installation](#installation)
@@ -15,7 +15,7 @@
   
   ## Installation
   
-  clone repo then install npm and inquirer
+  access deployed link
   
   ## Usage
   
@@ -36,11 +36,5 @@
   For more information, checkout my github profile page at [github.com/Mayfieldmel](github.com/Mayfieldmel) .
   
   
-  ## license
-
-  Licensed under the Apache license.
   
-  
-    [license link](#)
-    
 
