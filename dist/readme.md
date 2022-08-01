@@ -1,9 +1,9 @@
-# Weather Dash
-  ![licenseBadge](https://img.shields.io/badge/License-MIT-green.svg)
+# Readme Generator
+  ![licenseBadge](https://img.shields.io/badge/License-Apache-green.svg)
 
   ## Description
   
-  provide weather forecast by city
+  generates readmes
   
   ## Table of Contents
   * [Installation](#installation)
@@ -15,7 +15,7 @@
   
   ## Installation
   
-  access deployed link
+  clone repo then install npm and inquirer
   
   ## Usage
   
@@ -38,7 +38,7 @@
   
   ## license
 
-  Licensed under the MIT license.
+  Licensed under the Apache license.
   
   
     [license link](#)
