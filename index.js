@@ -125,6 +125,7 @@ promptUser()
     } else {
       console.log("no license");
       const dataArr = [answers];
+      dataArr.push(answers);
       return dataArr;
     }
   })

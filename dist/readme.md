@@ -1,9 +1,9 @@
-# Readme Generator
-  // undefined
+# Weather Dash
+  ![licenseBadge](https://img.shields.io/badge/License-MIT-green.svg)
 
   ## Description
   
-  generates readmes
+  provide weather forecast by city
   
   ## Table of Contents
   * [Installation](#installation)
@@ -23,7 +23,7 @@
 
   ## Contributions
 
-  emial me
+  email me
 
   ## Tests
 
@@ -41,8 +41,6 @@
   Licensed under the MIT license.
   
   
-    
     [license link](#)
-  
     
 

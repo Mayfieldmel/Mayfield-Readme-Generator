@@ -4,9 +4,7 @@ function renderLicenseBadge(license) {
   if (!license) {
    return '';
   }
-
-  // return ![licenseBadge](./images/license-MIT-green.svg);
-  //  return ![licenseBadge](https://img.shields.io/badge/License-MIT-green.svg);
+  return '![licenseBadge](https://img.shields.io/badge/License-MIT-green.svg)';
  
  };
 // TODO: Create a function that returns the license link
@@ -37,9 +35,9 @@ function renderLicenseSection(license) {
 
 // generate markdown for README
 function generateMarkdown(generateData) {
-  const [data] = generateData;
+  const [data, licenseData] = generateData;
   return `# ${data.title}
-  // ${renderLicenseBadge(generateData[1].license)}
+  ${renderLicenseBadge(licenseData.license)}
 
   ## Description
   
@@ -75,8 +73,8 @@ function generateMarkdown(generateData) {
 
   For more information, checkout my github profile page at [github.com/${data.github}](github.com/${data.github}) .
   
-  ${renderLicenseSection(generateData[1].license)}
-  ${renderLicenseLink(generateData[1].license)}
+  ${renderLicenseSection(licenseData.license)}
+  ${renderLicenseLink(licenseData.license)}
 
 `;
 }
