@@ -52,8 +52,7 @@ function renderLicenseTOC(license) {
     return "";
   }
 
-  return `
-  * [License](#license)
+  return `* [License](#license)
   `;
 };
 
