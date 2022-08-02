@@ -1,5 +1,5 @@
 # Weather Dash
-  
+  ![licenseBadge](https://img.shields.io/badge/License-Apache-green.svg)
 
   ## Description
   
@@ -11,11 +11,13 @@
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Questions](#questions)
+  
   * [License](#license)
+  
   
   ## Installation
   
-  acess deployed website link
+  access deployed link
   
   ## Usage
   
@@ -31,10 +33,16 @@
 
   ## Questions
   
-  If you have questions, contact me via email at [mayfieldmel@gmail.com](mailto:mayfieldmel@gmail.com) .
+  If you have questions, contact me via email at [mafieldmel@gmail.com](mailto:mafieldmel@gmail.com) .
 
   For more information, checkout my github profile page at [github.com/Mayfieldmel](https://github.com/Mayfieldmel) .
   
   
+  ## license
+
+  Licensed under the Apache license.
   
+  
+  click here for [Apache link](https://apache.org/licenses/) .
+    
 

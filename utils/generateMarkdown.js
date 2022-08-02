@@ -45,6 +45,18 @@ function renderLicenseSection(license) {
   `;
 };
 
+// function that returns the license table of contents link
+function renderLicenseTOC(license) {
+  if (!license) {
+    // If there is no license, return an empty string
+    return "";
+  }
+
+  return `
+  * [License](#license)
+  `;
+};
+
 
 // generate markdown for README
 function generateMarkdown(generateData) {
@@ -62,7 +74,7 @@ function generateMarkdown(generateData) {
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Questions](#questions)
-  * [License](#license)
+  ${renderLicenseTOC(licenseData.license)}
   
   ## Installation
   
