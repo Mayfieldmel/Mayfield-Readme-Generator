@@ -90,7 +90,7 @@ function generateMarkdown(generateData) {
 
   For more information, checkout my github profile page at [github.com/${
     data.github
-  }](github.com/${data.github}) .
+  }](https://github.com/${data.github}) .
   
   ${renderLicenseSection(licenseData.license)}
   ${renderLicenseLink(licenseData.license)}

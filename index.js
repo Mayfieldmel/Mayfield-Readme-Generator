@@ -86,6 +86,7 @@ const questions = [
   },
 ];
 
+// prompt license question
 const licenseQuestion = templateData => {
   return inquirer.prompt([
     {
@@ -103,6 +104,7 @@ const licenseQuestion = templateData => {
       }
     }
   ])
+  // push license answer to answers array
   .then(answer => {
     const dataArr = [templateData];
     dataArr.push(answer);
@@ -119,7 +121,6 @@ const promptUser = () => {
 // generate markdown and write file with user input
 promptUser()
   .then(answers => {
-    console.log(answers);
     if (answers.confirmLicense) {
       return licenseQuestion(answers);
     } else {
@@ -164,25 +165,3 @@ function writeToFile(readme) {
   }); 
   });
 };
-
-// const mockData =
-// {
-//   github: 'Mayfieldmel',
-//   title: 'Readme-Generator',
-//   description: 'generates readmes',
-//   installation: 'clone repo and instal npm & inquirer',
-//   usage: 'see demo',
-//   contributions: 'email me',
-//   tests: 'none',
-//   confirmLicense: 'y',
-//   license: 'MIT'
-// }
-
-
-
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();

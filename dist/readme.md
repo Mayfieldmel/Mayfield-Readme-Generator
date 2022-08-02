@@ -15,7 +15,7 @@
   
   ## Installation
   
-  access deployed link
+  acess deployed website link
   
   ## Usage
   
@@ -33,7 +33,7 @@
   
   If you have questions, contact me via email at [mayfieldmel@gmail.com](mailto:mayfieldmel@gmail.com) .
 
-  For more information, checkout my github profile page at [github.com/Mayfieldmel](github.com/Mayfieldmel) .
+  For more information, checkout my github profile page at [github.com/Mayfieldmel](https://github.com/Mayfieldmel) .
   
   
   
