@@ -20,6 +20,9 @@ The Mayfield Readme Generator generates a standard readme template interpolated 
 
 Clone the github repo to your computer. Then, install npm by typing ***npm i*** in the terminal and pressing enter. Once npm is installed, instal inquirer by typing ***npm i inquirer@8.2.4*** and pressing enter.
 
+## Usage
+
+See full-length demo at [https://watch.screencastify.com/v/NQ24s5FTq6geX0uo0IdW](https://watch.screencastify.com/v/NQ24s5FTq6geX0uo0IdW) .
 
 ## Credits
 
