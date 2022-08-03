@@ -1,9 +1,9 @@
-# Weather Dash
-  ![licenseBadge](https://img.shields.io/badge/License-Apache-green.svg)
+# Readme Generator
+  ![licenseBadge](https://img.shields.io/badge/License-BSD-green.svg)
 
   ## Description
   
-  provide weather forecast by city
+  generate readmes
   
   ## Table of Contents
   * [Installation](#installation)
@@ -11,13 +11,12 @@
   * [Contributions](#contributions)
   * [Tests](#tests)
   * [Questions](#questions)
-  
   * [License](#license)
   
   
   ## Installation
   
-  access deployed link
+  clone repo then instal npm and inquirer
   
   ## Usage
   
@@ -33,16 +32,16 @@
 
   ## Questions
   
-  If you have questions, contact me via email at [mafieldmel@gmail.com](mailto:mafieldmel@gmail.com) .
+  If you have questions, contact me via email at [mayfieldmel@gmail.com](mailto:mayfieldmel@gmail.com) .
 
   For more information, checkout my github profile page at [github.com/Mayfieldmel](https://github.com/Mayfieldmel) .
   
   
   ## license
 
-  Licensed under the Apache license.
+  Licensed under the BSD license.
   
   
-  click here for [Apache link](https://apache.org/licenses/) .
+  click here for [BSD link](https://opensource.org/licenses/BSD-3-Clause) .
     
 
