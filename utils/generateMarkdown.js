@@ -47,14 +47,14 @@ function renderLicenseSection(license) {
 
 // function that returns the license table of contents link
 function renderLicenseTOC(license) {
- if (!license) {
-   // If there is no license, return an empty string
-   return "";
- }
 
- return `
- * [License](#license)
- `;
+  if (!license) {
+    // If there is no license, return an empty string
+    return "";
+  }
+
+  return `* [License](#license)
+  `;
 };
 
 
