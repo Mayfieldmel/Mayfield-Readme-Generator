@@ -2,7 +2,7 @@
 
 This repo houses the assets used to build the Mayfield Readme Generator, available at https://mayfieldmel.github.io/Mayfield-Readme-Generator/ .
 
-![readme-generator-demo](#)
+![readme-generator-demo](./README-screenshot.png)
 
 ## The Generator
 
