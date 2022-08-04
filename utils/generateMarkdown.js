@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
  }
 
  return `
- ## license
+ ## License
 
  Licensed under the ${license} license.
  `;
@@ -71,7 +71,7 @@ function generateMarkdown(generateData) {
  ## Table of Contents
  * [Installation](#installation)
  * [Usage](#usage)
- * [Contributions](#contributions)
+ * [Contributing](#contributing)
  * [Tests](#tests)
  * [Questions](#questions)
  ${renderLicenseTOC(licenseData.license)}
@@ -84,7 +84,7 @@ function generateMarkdown(generateData) {
  
  ${data.usage}
 
- ## Contributions
+ ## Contributing
 
  ${data.contributions}
 
